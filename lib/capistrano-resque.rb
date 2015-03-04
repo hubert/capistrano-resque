@@ -1,4 +1,5 @@
 require "capistrano-resque/version"
+require 'resque/tasks'
 
 if defined?(Capistrano::VERSION) && Gem::Version.new(Capistrano::VERSION).release >= Gem::Version.new("3.0.0")
   load File.expand_path("../capistrano-resque/tasks/capistrano-resque.rake", __FILE__)
